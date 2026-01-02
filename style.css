@@ -1,36 +1,35 @@
-.container {
-    height: 600px;
-    width: 600px;
-    display : flex;
-    flex-direction: row;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-    align-items: flex-start;
-    /* align-content: flex-end; */
+.navbar {
+    background-color: black;
 }
-div{
+
+.navbar ul {
+    display: flex;
+    justify-content: space-evenly; /* ✅ works here */
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+#outer{
     border: 2px solid black;
-    height: 50px;
-    width: 200px;
-    display: inline-block;
-    text-align: center;
-}
-#box1 {
-    background-color: lightblue;
-}
-#box2 {
-    background-color: lightgreen;
-    flex-shrink: 1;
     height: 200px;
+    width: 200px;
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#box3 {
-    background-color: lightcoral;
-    height: 75px;
-}
-#box4 {
-    background-color: lightgoldenrodyellow;
-}
-#box5 {
-    background-color: lightpink;
-    /* align-self: flex-end; */
+#inner{
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+    background-color: lightblue;
 }
