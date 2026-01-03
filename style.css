@@ -26,6 +26,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.5s ease;
+    border-radius: 50px;
+    
 }
 #inner{
     border: 2px solid red;
@@ -42,4 +45,19 @@ a {
     #outer{
         background-color: green;
     }
+}
+#inner:hover {
+    background-color: orange;
+    
+}
+#outer:hover {
+    background-color: yellow;
+    transform: scale(1.1);
+    transform: skewX(45deg);
+}
+#outer:active {
+    background-color: red;
+}
+#inner:active {
+    background-color: purple;
 }
