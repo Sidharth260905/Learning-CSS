@@ -33,3 +33,13 @@ a {
     width: 50px;
     background-color: lightblue;
 }
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+}
+@media (min-width: 300px) and (max-width: 400px) {
+    #outer{
+        background-color: green;
+    }
+}
